@@ -7,7 +7,9 @@
     <title>Image Uploader</title>
     <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/dropzone/4.3.0/dropzone.min.css" integrity="sha256-e47xOkXs1JXFbjjpoRr1/LhVcqSzRmGmPqsrUQeVs+g=" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -21,7 +23,7 @@
               <div class="progress">
                 <div class="progress-bar" role="progressbar"></div>
               </div>
-              <form action="/upload" method="post" enctype='multipart/form-data' id='newThread'>
+              <form action="/upload" method="post" enctype="multipart/form-data" id="newThread" class="dropzone">
                 <div class="form-group">
                   <input type="text" class="form-control" name="title" placeholder="Title">
                 </div>
@@ -75,9 +77,11 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>  <script src="javascripts/utils.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="javascripts/utils.js"></script>
     <script src="javascripts/dom.js"></script>
     <script src="javascripts/upload.js"></script>
+    <script src="https://cdn.jsdelivr.net/dropzone/4.3.0/dropzone.min.js" integrity="sha256-p2l8VeL3iL1J0NxcXbEVtoyYSC+VbEbre5KHbzq1fq8=" crossorigin="anonymous"></script>
 
   </body>
 </html>
